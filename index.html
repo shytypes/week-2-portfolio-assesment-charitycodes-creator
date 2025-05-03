@@ -22,6 +22,93 @@
     <!-- Main Area -->
     <main>
       <h1>My Amazing Portfolio</h1>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Charity, a passionate Virtual Assistant with expertise in data entry, website migration, and customer service. Recently, I've been diving into software development, learning HTML, CSS, and JavaScript to expand my skill set and pursue my dream of becoming a software developer.
+        </p>
+        <img 
+          src="assets/images/virtual_assistant_certificate_charity_ogembo.png" 
+          alt="Virtual Assistant Certificate" 
+          class="responsive-img" 
+        />
+      </section>
+
+      <section id="projects">
+        <h2>Experience & Projects</h2>
+        <ul>
+          <li>
+            <strong>Website Migration Assistant</strong><br />
+            Worked on migrating websites from WordPress to Webflow, mastering the power of AI tools and understanding the importance of solid training.
+          </li>
+          <li>
+            <strong>Coseke Kenya Limited (Data Entry & VA)</strong><br />
+            Responsible for maintaining data accuracy, assisting clients, and handling administrative tasks with efficiency and care.
+          </li>
+          <li>
+            <strong>Exploring Software Development</strong><br />
+            Actively learning HTML, CSS, and JavaScript to transition into the software development field.
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:kwambokacharity2@gmail.com">kwambokacharity2@gmail.com</a></p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/charityogembo" target="_blank">charityogembo</a>
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/charitycodes-creator" target="_blank">charitycodes-creator</a>
+        </p>
+
+        <section id="contact-form">
+          <h2>Contact Form</h2>
+          <form id="form">
+            <label for="first-name">First Name:</label><br />
+            <input type="text" id="first-name" name="first-name" required /><br />
+        
+            <label for="second-name">Second Name:</label><br />
+            <input type="text" id="second-name" name="second-name" required /><br />
+        
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required /><br />
+        
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" required></textarea><br />
+        
+            <button type="submit">Submit</button>
+          </form>
+        
+          <div id="form-output"></div>
+        </section>
+        
+        <script>
+          const form = document.getElementById('form');
+          const output = document.getElementById('form-output');
+        
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        
+            const firstName = document.getElementById('first-name').value;
+            const secondName = document.getElementById('second-name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+        
+            output.innerHTML = `
+              <h3>Form Submitted:</h3>
+              <p><strong>First Name:</strong> ${firstName}</p>
+              <p><strong>Second Name:</strong> ${secondName}</p>
+              <p><strong>Email:</strong> ${email}</p>
+              <p><strong>Message:</strong> ${message}</p>
+            `;
+        
+            form.reset(); // Optionally reset the form
+          });
+        </script>
     </main>
   </body>
 </html>

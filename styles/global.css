@@ -8,3 +8,111 @@
 /* the font-family 'JetBrains Mono', has been linked
  * and is available for your use
  * */
+ h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Title text style */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Section styling for layout */
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* subtle shadow for depth */
+}
+
+/* Section headings */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+/* Paragraph styling */
+p {
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+/* Link styling */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0066cc;
+}
+
+/* Image styling */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Add spacing around the image */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* List styling for experience section */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+/* Contact Form Styling */
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+#contact-form button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+  background-color: #0066cc;
+}
+
+#form-output {
+  margin-top: 20px;
+  background-color: #eef;
+  padding: 15px;
+  border-radius: 6px;
+}
